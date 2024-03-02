@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_my_task"
+        android:title="我的任务"
+        android:icon="@drawable/mytask" />
+
+    <item
+        android:id="@+id/navigation_achieve"
+        android:title="我的成就"
+        android:icon="@drawable/achieve" />
+
+    <item
+        android:id="@+id/navigation_mission"
+        android:title="任务探险"
+        android:icon="@drawable/mission" />
+
+    <item
+    android:id="@+id/navigation_home"
+    android:title="个人中心"
+    android:icon="@drawable/home" />
+</menu>
