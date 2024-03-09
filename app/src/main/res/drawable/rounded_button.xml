@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+        <corners android:radius="8dp" />
+        <stroke android:width="2dp"  />
+        <color  android:color="#ABF9B5"/><!-- 其他属性，如填充颜色等 -->
+    </shape>
+
+</selector>
