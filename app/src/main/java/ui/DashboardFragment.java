@@ -25,6 +25,7 @@ import java.util.List;
 
 import com.example.myapplication.DBHelper;
 import com.example.myapplication.ListAdapter;
+import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.costList;
 import com.example.myapplication.new_cost;
@@ -70,9 +71,9 @@ public class DashboardFragment extends Fragment {
         db.close();
     }
     private void initView() {
-        helper=new DBHelper(.this);
-        listView = listView.findViewById();
-        Add= Add.findViewById();
+        helper = new DBHelper(getActivity());
+        listView = listView.findViewById(R.id.list_view);
+        Add= Add.findViewById(R.id.add);
     }
 
     //事件：添加

@@ -8,14 +8,14 @@
 
     <ListView
         android:id="@+id/list_view"
-        android:layout_width="728dp"
-        android:layout_height="751dp"
+        android:layout_width="397dp"
+        android:layout_height="496dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.378" />
+        app:layout_constraintVertical_bias="0.236" />
 
     <ImageButton
         android:id="@+id/add"
@@ -30,9 +30,10 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.811" />
+        app:layout_constraintVertical_bias="0.788" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

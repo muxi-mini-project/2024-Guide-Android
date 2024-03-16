@@ -26,13 +26,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
         // 设置默认显示的 Fragment
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new HomeFragment())
+                .replace(R.id.container, new DashboardFragment())
                 .commit();
     }
 
