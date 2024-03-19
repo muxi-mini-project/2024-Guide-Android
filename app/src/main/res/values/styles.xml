@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomProgressBar">
+        parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/jindutiao2</item> <!-- 引用自定义进度条样式 -->
+        <item name="android:indeterminateDrawable">@drawable/jindutiao</item> <!-- 引用自定义进度条样式 -->
+        <item name="android:minHeight">10dp</item> <!-- 设置进度条高度 -->
+        <item name="android:maxHeight">10dp</item> <!-- 设置进度条高度 -->
+    </style>
+</resources>

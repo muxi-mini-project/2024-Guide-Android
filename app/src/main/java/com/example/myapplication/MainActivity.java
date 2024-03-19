@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 if (id == R.id.navigation_home) {
                     selectedFragment = new HomeFragment();
-                } else if (id == R.id.navigation_achieve) {
-                    selectedFragment = new DashboardFragment();
-                } else if (id == R.id.navigation_mission) {
-                    selectedFragment = new NotificationsFragment();
                 } else if (id == R.id.navigation_my_task) {
+                    selectedFragment = new DashboardFragment();
+                } else if (id == R.id.navigation_achieve) {
+                    selectedFragment = new NotificationsFragment();
+                } else if (id == R.id.navigation_mission) {
                     selectedFragment = new ProfileFragment();
                 }
                 getSupportFragmentManager().beginTransaction()

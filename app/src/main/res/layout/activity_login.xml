@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/deng_ru"
-        android:layout_width="414dp"
-        android:layout_height="774dp"
+        android:layout_width="434dp"
+        android:layout_height="793dp"
         android:layout_marginEnd="2dp"
         android:background="@drawable/login"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,29 +20,29 @@
 
     <Button
         android:id="@+id/register_button"
+        android:layout_width="93dp"
+        android:layout_height="41dp"
         android:text="注册"
-        android:layout_width="92dp"
-        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.679" />
+        app:layout_constraintVertical_bias="0.712" />
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
+        android:layout_width="234dp"
+        android:layout_height="48dp"
         android:text="登 录"
         android:textColor="@color/white"
         android:textSize="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
+        app:layout_constraintVertical_bias="0.801" />
 
     <Button
         android:id="@+id/forget_button"
@@ -52,64 +52,48 @@
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.678" />
+        app:layout_constraintVertical_bias="0.712" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="174dp"
-        android:layout_height="40dp"
+        android:layout_width="245dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:hint="账号"
         android:maxLines="1"
         android:padding="5dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintVertical_bias="0.519" />
 
     <EditText
         android:id="@+id/et_2"
-        android:layout_width="179dp"
-        android:layout_height="40dp"
+        android:layout_width="246dp"
+        android:layout_height="47dp"
+        android:background="@drawable/edittext_border"
+        android:gravity="center"
+        android:hint="密码"
         android:inputType="textPassword"
         android:maxLines="1"
         android:padding="5dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606" />
-
-    <TextView
-        android:layout_width="70dp"
-        android:layout_height="38dp"
-        android:text="账号"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/deng_ru"
-        app:layout_constraintVertical_bias="0.532" />
-
-    <TextView
-        android:layout_width="70dp"
-        android:layout_height="38dp"
-        android:text="密码"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/deng_ru"
-        app:layout_constraintVertical_bias="0.607" />
+        app:layout_constraintVertical_bias="0.62" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

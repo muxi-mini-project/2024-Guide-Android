@@ -4,38 +4,242 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="332dp"
-        android:layout_height="146dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="539dp"
-        app:cardBackgroundColor="#F1F1F1"
-        app:cardCornerRadius="52px"
-        >
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="354dp"
-            android:layout_height="78dp"
-            android:gravity="center"
-            android:text="我已坚持"
-            android:textSize="35sp"></TextView>
-    </androidx.cardview.widget.CardView>
 
     <ImageView
-        android:layout_width="351dp"
-        android:layout_height="354dp"
+        android:layout_width="315dp"
+        android:layout_height="397dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="65dp"
-        android:background="#F0F0F0"/>
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/one" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@style/CustomProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="176dp"
+        android:max="100"
+        android:progress="50" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="@style/CustomProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="105dp"
+        android:max="100"
+        android:progress="50" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/CustomProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="316dp"
+        android:max="100"
+        android:progress="50" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@style/CustomProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="247dp"
+        android:max="100"
+        android:progress="50" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="291dp"
+        android:layout_height="146dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="558dp"
+        android:background="@drawable/one" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="192dp"
+        android:layout_height="169dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="188dp"
+        app:srcCompat="@drawable/two" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="259dp"
+        android:layout_marginBottom="353dp"
+        android:text="自我提升" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="261dp"
+        android:layout_marginBottom="284dp"
+        android:text="工作事务" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="258dp"
+        android:layout_marginBottom="213dp"
+        android:text="习惯养成" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="257dp"
+        android:layout_marginBottom="138dp"
+        android:text="代办杂事" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="106dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="641dp"
+        android:text="我已坚持"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="594dp"
+        android:text="最久坚持"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="61dp"
+        android:text="一共完成"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="61dp"
+        android:text="个任务"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="643dp"
+        android:text="天"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="594dp"
+        android:text="天"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="646dp"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="595dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextNumberSigned"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="52dp"
+        app:srcCompat="@drawable/chengjiu" />
 
 </RelativeLayout>
