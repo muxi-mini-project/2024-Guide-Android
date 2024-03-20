@@ -1,4 +1,4 @@
-package ui;
+package ui.Dashboard;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -7,28 +7,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import com.example.myapplication.DBHelper;
-import com.example.myapplication.ListAdapter;
-import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
-import com.example.myapplication.costList;
-import com.example.myapplication.new_cost;
+import com.example.myapplication.Data.costList;
 
 public class DashboardFragment extends Fragment {
     private DBHelper helper;
@@ -67,7 +58,6 @@ public class DashboardFragment extends Fragment {
             list.add(clist);
         }
         //绑定适配器
-        listView.setAdapter(new ListAdapter(this,list));
         db.close();
     }
     private void initView() {

@@ -4,8 +4,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import ui.DashboardFragment;
-
 public class DBHelper extends SQLiteOpenHelper {
 
     private static int DB_VERSION = 1;

@@ -1,6 +1,7 @@
-package com.example.myapplication;
+package com.example.myapplication.ApiAbout;
 
-public class LoginData { private String Login;
+public class LoginData {
+    private String Login;
     private String Email;
     private String Password;
     private String token;

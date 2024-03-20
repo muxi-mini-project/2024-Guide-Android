@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.ApiAbout;
 
 public class ResetPasswordRequest {
     private String Email;

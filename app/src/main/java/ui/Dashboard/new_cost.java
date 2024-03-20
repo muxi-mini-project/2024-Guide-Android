@@ -1,21 +1,20 @@
-package com.example.myapplication;
+package ui.Dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
-import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import com.example.myapplication.DBHelper;
+import com.example.myapplication.R;
+
 public class new_cost extends AppCompatActivity {
     private DBHelper helper;
     private EditText et_cost_title;

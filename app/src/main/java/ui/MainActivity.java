@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
@@ -6,11 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+
+import com.example.myapplication.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import ui.DashboardFragment;
-import ui.HomeFragment;
-import ui.NotificationsFragment;
-import ui.ProfileFragment;
+import ui.Dashboard.DashboardFragment;
+import ui.Home.HomeFragment;
+import ui.Notifications.NotificationsFragment;
+import ui.Profile.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
 

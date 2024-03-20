@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class First extends AppCompatActivity {
+public class FirstActivity extends AppCompatActivity {
     private Button mfirstbutton;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -19,7 +19,7 @@ public class First extends AppCompatActivity {
         mfirstbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(First.this, Login.class);
+                Intent intent = new Intent(FirstActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

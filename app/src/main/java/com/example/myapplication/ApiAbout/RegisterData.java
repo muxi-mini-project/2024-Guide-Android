@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.ApiAbout;
 
 public class RegisterData <type>{
     private int code;
