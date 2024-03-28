@@ -2,80 +2,61 @@ package ui.Dashboard;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.widget.ImageButton;
-import android.widget.ListView;
+import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import com.example.myapplication.DBHelper;
 import com.example.myapplication.R;
-import com.example.myapplication.Data.costList;
+
+import ui.Dashboard.recycle.Item;
+import ui.Dashboard.recycle.RecordAdapter;
 
 public class DashboardFragment extends Fragment {
-    private DBHelper helper;
-    private  ListView listView;
-    private  ImageButton Add;
-    private List<costList>list;
+    private RecyclerView mrecyclerView;
+    private RecordAdapter adapter;
+    private ArrayList<Item> itemList;
+    private ImageButton addButton;
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // 在这里指定 DashboardFragment 的界面布局
-        return inflater.inflate(R.layout.fragment_dashboard, container, false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        mrecyclerView = view.findViewById(R.id.recyclerView);
+        addButton = view.findViewById(R.id.addButton); // 找到按钮
+        itemList = generateItemList();
+        adapter = new RecordAdapter(itemList);
+        mrecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        mrecyclerView.setAdapter(adapter);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 点击按钮后执行添加任务的操作
+                generateItemList();
+            }
+        });
+        return view;
     }
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        initView();
-        initData();
 
-    }
-
-    private void setContentView(int activityMain) {
-
-    }
-
-    @SuppressLint("Range")
-    private void initData() {
-        list=new ArrayList<>();
-        SQLiteDatabase db=helper.getReadableDatabase();
-        Cursor cursor=db.query("account",null,null,null,null,
-                null,null);
-        while (cursor.moveToNext()){
-            costList clist=new costList();//构造实例
-            clist.set_id(cursor.getString(cursor.getColumnIndex("_id")));
-            clist.setTitle(cursor.getString(cursor.getColumnIndex("Title")));
-            clist.setDate(cursor.getString(cursor.getColumnIndex("Date")));
-            clist.setMoney(cursor.getString(cursor.getColumnIndex("Money")));
-            list.add(clist);
+    private ArrayList<Item> generateItemList() {
+        ArrayList<Item> itemList = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            Item item = new Item();
+            item.setTextlevel("lv5");
+            item.setTextname("死亡日");
+            item.setTextstyle("个人任务");
+            item.setTexttime("4.4");
+            itemList.add(item);
         }
-        //绑定适配器
-        db.close();
-    }
-    private void initView() {
-        helper = new DBHelper(getActivity());
-        listView = listView.findViewById(R.id.list_view);
-        Add= Add.findViewById(R.id.add);
-    }
-
-    //事件：添加
-    public void addAccount(View view){//跳转
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==1&&resultCode==1)
-        {
-            this.initData();
-        }
+        return itemList;
     }
 }
