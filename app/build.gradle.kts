@@ -32,6 +32,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.fragment:fragment:1.4.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.8.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -45,5 +46,7 @@ dependencies {
     implementation ("io.grpc:grpc-okhttp:1.61.1")
     implementation ("io.grpc:grpc-protobuf:1.61.1")
     implementation ("io.grpc:grpc-stub:1.61.1")
+    implementation("com.squareup.okhttp3:okhttp:4.9.1")
+
 }
 ;

@@ -38,22 +38,20 @@ public class LoginActivity extends AppCompatActivity {
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("150.158.114.182:8080/auth/register")
+                .baseUrl("http://150.158.114.182:8080/login/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         api = retrofit.create(Guide.class);
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-
         mEtUser = findViewById(R.id.email);
         mbuttonforget = findViewById(R.id.forget_button);
         mEtPassword = findViewById(R.id.et_2);
         mregisterbutton = findViewById(R.id.register_button);
+        textHint = findViewById(R.id.textHint);
         mregisterbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,7 +66,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String strUsername = mEtUser.getText().toString();
                 String strPassword = mEtPassword.getText().toString();
-
 
 
                 Call<LoginData> LoginCall = api.getLoginDate(strUsername, strPassword);
@@ -88,13 +85,15 @@ public class LoginActivity extends AppCompatActivity {
                             passwordCheck = true;
                         } else passwordCheck = false;
 
-                        if (!passwordCheck) textHint.setText("用户名或密码错误！");
-                        else {
+                        if (!passwordCheck) {
+                            // 设置错误提示信息并显示
+                            textHint.setText("用户名或密码错误！");
+                            textHint.setVisibility(View.VISIBLE); // 显示错误提示信息
+                        } else {
                             SharedPreferences sharedPrefer = getSharedPreferences("User_Details", Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPrefer.edit();
                             editor.putString("token", body.getToken());
                             editor.apply();
-
                             Intent intent;
                             intent = MainActivity.newIntent(LoginActivity.this, strUsername);
                             startActivity(intent);
@@ -112,6 +111,4 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    protected void onCreate() {
-    }
 }

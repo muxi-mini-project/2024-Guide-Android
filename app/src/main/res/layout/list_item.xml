@@ -1,49 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="120dp"
+    android:id="@+id/relative">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="307dp"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/kuang" />
 
     <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="122dp"
-        android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="10dp"
-        android:ellipsize="marquee"
-        android:gravity="center"
-        android:singleLine="true"
-        android:text="costTitle"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/ddl"
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_marginLeft="0dp"
-        android:layout_toRightOf="@+id/tv_title"
-        android:gravity="center"
-        android:text="2020-05-31"
-        android:textSize="20sp" />
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="62dp"
+        android:text="任务名称" />
 
     <TextView
-        android:id="@+id/dengji"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="3dp"
-        android:gravity="center"
-        android:text="25"
-        android:textColor="#ffbd27"
-        android:textSize="25sp" />
+        android:id="@+id/level"
+        android:layout_width="71dp"
+        android:layout_height="31dp"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="33dp"
+        android:text="Lv" />
 
     <TextView
-        android:id="@+id/tybe"
+        android:id="@+id/texttime"
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_marginLeft="1dp"
-        android:layout_toRightOf="@+id/ddl"
-        android:gravity="center"
-        android:text="2020-05-31"
-        android:textSize="20sp" />
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="36dp"
+        android:text="TextView" />
 
+    <TextView
+        android:id="@+id/textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="10dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="66dp"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView9"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_marginEnd="233dp"
+        android:layout_marginBottom="36dp"
+        android:text="任务时间" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="8dp"
+        android:text="任务类型" />
 </RelativeLayout>

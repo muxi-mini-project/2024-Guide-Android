@@ -6,12 +6,14 @@
 
 
     <ImageView
-        android:layout_width="315dp"
-        android:layout_height="397dp"
+        android:layout_width="343dp"
+        android:layout_height="387dp"
+        android:layout_below="@+id/imageView4"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="14dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginTop="-19dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="31dp"
         android:background="@drawable/one" />
 
     <ProgressBar
@@ -22,9 +24,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="87dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="176dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="223dp"
         android:max="100"
         android:progress="50" />
 
@@ -36,9 +38,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="85dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="105dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="153dp"
         android:max="100"
         android:progress="50" />
 
@@ -50,9 +52,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="84dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="316dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="360dp"
         android:max="100"
         android:progress="50" />
 
@@ -64,33 +66,32 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="87dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="247dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="293dp"
         android:max="100"
         android:progress="50" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="291dp"
-        android:layout_height="146dp"
+        android:layout_width="240dp"
+        android:layout_height="120dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="558dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="487dp"
         android:background="@drawable/one" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="192dp"
-        android:layout_height="169dp"
+        android:layout_width="127dp"
+        android:layout_height="87dp"
         android:layout_alignTop="@+id/imageView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="133dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginBottom="188dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="102dp"
         app:srcCompat="@drawable/two" />
 
     <TextView
@@ -99,8 +100,8 @@
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="259dp"
-        android:layout_marginBottom="353dp"
+        android:layout_marginEnd="257dp"
+        android:layout_marginBottom="367dp"
         android:text="自我提升" />
 
     <TextView
@@ -109,8 +110,8 @@
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="261dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginEnd="258dp"
+        android:layout_marginBottom="300dp"
         android:text="工作事务" />
 
     <TextView
@@ -119,8 +120,8 @@
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="258dp"
-        android:layout_marginBottom="213dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="232dp"
         android:text="习惯养成" />
 
     <TextView
@@ -129,8 +130,8 @@
         android:layout_height="33dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="257dp"
-        android:layout_marginBottom="138dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="161dp"
         android:text="代办杂事" />
 
     <TextView
@@ -139,8 +140,8 @@
         android:layout_height="51dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="641dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="542dp"
         android:text="我已坚持"
         android:textSize="25dp" />
 
@@ -150,8 +151,8 @@
         android:layout_height="46dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="594dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="495dp"
         android:text="最久坚持"
         android:textSize="25dp" />
 
@@ -161,8 +162,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="163dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="104dp"
         android:text="一共完成"
         android:textSize="19dp" />
 
@@ -172,8 +173,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="59dp"
-        android:layout_marginBottom="61dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="103dp"
         android:text="个任务"
         android:textSize="19dp" />
 
@@ -183,8 +184,8 @@
         android:layout_height="48dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="643dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="545dp"
         android:text="天"
         android:textSize="25dp" />
 
@@ -194,8 +195,8 @@
         android:layout_height="48dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="594dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="496dp"
         android:text="天"
         android:textSize="25dp" />
 
@@ -205,8 +206,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="646dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="543dp"
         android:ems="10"
         android:inputType="time" />
 
@@ -216,8 +217,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="107dp"
-        android:layout_marginBottom="595dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="496dp"
         android:ems="10"
         android:inputType="date" />
 
@@ -227,8 +228,8 @@
         android:layout_height="29dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="145dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="103dp"
         android:ems="10"
         android:inputType="numberSigned" />
 
@@ -238,8 +239,8 @@
         android:layout_height="44dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="38dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="97dp"
         app:srcCompat="@drawable/chengjiu" />
 
 </RelativeLayout>
